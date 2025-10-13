@@ -1,5 +1,5 @@
 import React from 'react'
-import { menuLinks } from '../assets/assets.js';
+import { images, menuLinks } from '../assets/assets.js';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className=' flex justify-between items-center border-2 rounded-4xl px-7 py-4'>
             {/* Left Side */}
             <Link>
-                Logo
+                <img src={images.logo} alt="Logo" />
             </Link>
 
             {/* Right Side */}
