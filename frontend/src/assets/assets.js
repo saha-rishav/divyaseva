@@ -6,6 +6,6 @@ export const images = {
 
 export const menuLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about' },
-    { name: 'Services', path: '/services' },
+    { name: 'About Us', path: '/about-us' },
+    { name: 'Services', path: '/our-services' },
 ]

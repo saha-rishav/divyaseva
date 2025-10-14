@@ -4,6 +4,8 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import MainLayout from './layouts/MainLayout'
+import About from './pages/About'
+import Services from './pages/Services'
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
         {/* Main Layout Routes */}
         <Route element={<MainLayout />}>
           <Route path='/' element={<Home />} />
+          <Route path='/about-us' element={<About />} />
+          <Route path='/our-services' element={<Services />} />
         </Route>
 
         {/* Auth Routes (no layout) */}
