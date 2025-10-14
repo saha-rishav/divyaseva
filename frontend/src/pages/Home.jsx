@@ -89,7 +89,7 @@ const Home = () => {
 
       <section className="px-[120px] bg-background gap-6 py-10">
         <div className=' flex justify-between items-center'>
-          <h1 className='text-secondary text-5xl font-bold text-center mb-6'>Our Services</h1>
+          <h1 className='text-secondary text-5xl font-bold text-center mb-6'>Featured Pujas</h1>
           <button className=" text-[#7b2c00] flex justify-center items-center font-semibold px-6 py-3 rounded-lg hover:bg-yellow-300">
             View All 
           </button>
