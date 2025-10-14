@@ -30,7 +30,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className=' hidden md:flex absolute bottom-[-85px] left-1/2 transform -translate-x-1/2 w-[95%] max-w-5xl mx-auto border border-primary hover:border-2 backdrop-filter backdrop-blur-md bg-opacity-20 rounded-2xl shadow-lg px-6 py-10  flex-col md:flex-row items-center justify-between gap-4'>
+        <div className=' hidden md:flex absolute bottom-[-85px] left-1/2 transform -translate-x-1/2 w-[95%] max-w-5xl mx-auto border border-primary backdrop-filter backdrop-blur-md bg-opacity-20 rounded-2xl shadow-lg px-6 py-10  flex-col md:flex-row items-center justify-between gap-4'>
           <div className="flex flex-col w-full md:w-1/3">
             <label className="font-semibold text-primary mb-1">Select Puja *</label>
             <input
