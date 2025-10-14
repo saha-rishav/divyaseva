@@ -5,5 +5,7 @@
 @theme {
   --font-script: "Cormorant Garamond", serif;
   --color-primary: #fdc700;
-  --color-heading: #fa9f21
+  --color-background: #fed496;
+  --color-heading: #fa9f21;
+  --color-secondary: #933f26
 }

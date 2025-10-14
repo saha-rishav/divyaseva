@@ -5,9 +5,9 @@ import Footer from '../components/Footer'
 
 const MainLayout = () => {
     return (
-        <div className='w-full bg-[#9f2500]'>
+        <div className='bg-[#9f2500] font-script'>
             <Navbar />
-            <main className='pt-[90px] w-[90%] max-w-7xl mx-auto py-2'>
+            <main className='pt-[90px]  mx-auto py-2'>
                 <Outlet />
             </main>
             <Footer />

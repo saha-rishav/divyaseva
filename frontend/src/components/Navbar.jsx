@@ -15,8 +15,8 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className="fixed top-0 left-0 w-full z-50 flex justify-center transition-all duration-300">
-            <div className={`w-[90%] max-w-7xl transition-all duration-300 py-3 flex justify-between items-center rounded-2xl
+        <nav className="fixed top-0 left-0 w-full z-50 flex justify-center transition-all duration-300">
+            <div className={`w-[90%] max-w-7xl mt-1.5 transition-all duration-300 py-3 flex justify-between items-center rounded-2xl
                 ${isScrolled
                     ? 'bg-[#ee410d] border border-transparent shadow-md px-6'
                     : 'bg-transparent border border-transparent'
@@ -40,7 +40,7 @@ const Navbar = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </nav>
     );
 };
 
