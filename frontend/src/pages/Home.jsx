@@ -158,7 +158,54 @@ const Home = () => {
       {/* Chat with Pandits */}
       <section className=' bg-background py-16'>
         <div className=' w-[90%] max-w-7xl mx-auto'>
-          <h2 className='text-xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 bg-clip-text text-transparent text-center'>Connect Instantly with Verified Pandits</h2>
+          <h2 className='text-xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 bg-clip-text text-transparent text-center mb-3'>Connect Instantly with Verified Pandits</h2>
+          <p className=' text-center text-sm md:text-base lg:text-lg'>Ask your questions directly to our Pandit Ji — completely free.</p>
+
+          <div className=' grid grid-cols-2 lg:grid-cols-4 gap-4 mt-9'>
+            <div className='w-full text-center bg-card p-6 rounded-lg'>
+              <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              />
+              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Mundan Ceremony</h3>
+              <p className=' text-lg'>Auspecious beginning for your new home</p>
+            </div>
+            <div className='w-full text-center bg-card p-6 rounded-lg'>
+              <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              />
+              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Mundan Ceremony</h3>
+              <p className=' text-lg'>Auspecious beginning for your new home</p>
+            </div>
+            <div className='w-full text-center bg-card p-6 rounded-lg'>
+              <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              />
+              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Mundan Ceremony</h3>
+              <p className=' text-lg'>Auspecious beginning for your new home</p>
+            </div>
+            <div className='w-full text-center bg-card p-6 rounded-lg'>
+              <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              />
+              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Mundan Ceremony</h3>
+              <p className=' text-lg'>Auspecious beginning for your new home</p>
+            </div>
+          </div>
+
+          <div className=' w-full flex justify-center items-center mt-6'>
+            <button className=" text-[#7b2c00] flex items-center font-semibold px-4.5 py-2.5 rounded-lg bg-button hover:bg-yellow-300 cursor-pointer" onClick={() => navigate('/our-services')}>
+              Show All &nbsp;
+              <FaLongArrowAltRight />
+            </button>
+          </div>
         </div>
       </section>
 
