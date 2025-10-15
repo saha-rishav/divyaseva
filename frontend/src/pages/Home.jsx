@@ -1,12 +1,14 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Home = () => {
 
   const navigate = useNavigate();
 
   return (
-    <div className=''>
+    <>
+      {/* Hero Section */}
       <section className='relative'>
         <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] max-w-7xl mx-auto items-center gap-6 pt-16 pb-[70px] ">
           <div className="w-[90%]">
@@ -66,74 +68,105 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 items-center bg-background pt-0 md:pt-[175px] px-[30px] md:px-[65px] gap-6 py-16 ">
-        <div className="mt-10 md:mt-0 flex justify-center items-center">
-          <img
-            src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-            alt="Pandit performing puja"
-            className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
-          />
-        </div>
-        <div className="w-[90%]">
-          <h1 className="text-4xl lg:text-5xl font-script text-secondary font-semibold capitalize  mb-6">
-            About Us
-          </h1>
-          <p className="text-xl mb-6  leading-relaxed">
-            At DivyaSeva, we make it easy to connect with authentic Vedic Pandits for every important occasion in your life — from Griha Pravesh to Wedding Puja and beyond. Our mission is to help you perform sacred rituals with devotion, guidance, and peace of mind.
-          </p>
-          <button className="bg-yellow-400 text-[#7b2c00] font-semibold px-6 py-3 rounded-lg hover:bg-yellow-300 cursor-pointer" onClick={() => navigate('/about-us')}>
-            See More
-          </button>
+      {/* About Us Section */}
+      <section className=" bg-background py-16">
+        <div className='w-[90%] max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center pt-[100px] gap-6 '>
+          <div className="mt-10 md:mt-0 flex justify-center items-center">
+            <img
+              src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+              alt="Pandit performing puja"
+              className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+            />
+          </div>
+          <div className="w-[90%]">
+            <h1 className="text-4xl lg:text-5xl font-script text-secondary font-semibold capitalize  mb-6">
+              About Us
+            </h1>
+            <p className="text-xl mb-6  leading-relaxed">
+              At DivyaSeva, we make it easy to connect with authentic Vedic Pandits for every important occasion in your life — from Griha Pravesh to Wedding Puja and beyond. Our mission is to help you perform sacred rituals with devotion, guidance, and peace of mind.
+            </p>
+            <button className="bg-button text-[#7b2c00] font-semibold px-4.5 py-2.5 rounded-lg hover:bg-yellow-300 cursor-pointer" onClick={() => navigate('/about-us')}>
+              See More
+            </button>
+          </div>
         </div>
       </section>
 
-      <section className="px-[120px] bg-background gap-6 py-10">
-        <div className=' flex justify-between items-center'>
-          <h1 className='text-secondary text-5xl font-bold text-center mb-6'>Featured Pujas</h1>
-          <button className=" text-[#7b2c00] flex justify-center items-center font-semibold px-6 py-3 rounded-lg hover:bg-yellow-300">
-            View All 
-          </button>
-        </div>
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-2'>
-          <div className='w-full text-center bg-card p-6 rounded-lg'>
-            <img
-              src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-              alt="Pandit performing puja"
-              className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
-            />
-            <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Griha Pravesh Puja</h3>
-            <p className=' text-lg'>Auspecious beginning for your new home</p>
+      {/* Featured Pujas Section */}
+      <section className="bg-background gap-6 py-10">
+        <div className='w-[90%] max-w-7xl mx-auto pt-[40px]'>
+          <h1 className='text-secondary text-5xl font-bold text-center mb-9'>Featured Pujas</h1>
+
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-2'>
+            <div className='w-full text-center bg-card p-6 rounded-lg'>
+              <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              />
+              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Griha Pravesh Puja</h3>
+              <p className=' text-lg'>Auspecious beginning for your new home</p>
+            </div>
+            <div className='w-full text-center bg-card p-6 rounded-lg'>
+              <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              />
+              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Satyanarayan Katha</h3>
+              <p className=' text-lg'>For peace, properity and blessings</p>
+            </div>
+            <div className='w-full text-center bg-card p-6 rounded-lg'>
+              <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              />
+              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Wedding Puja</h3>
+              <p className=' text-lg'>Auspecious beginning for your new home</p>
+            </div>
+            <div className='w-full text-center bg-card p-6 rounded-lg'>
+              <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              />
+              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Mundan Ceremony</h3>
+              <p className=' text-lg'>Auspecious beginning for your new home</p>
+            </div>
           </div>
-          <div className='w-full text-center bg-card p-6 rounded-lg'>
-            <img
-              src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-              alt="Pandit performing puja"
-              className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
-            />
-            <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Satyanarayan Katha</h3>
-            <p className=' text-lg'>For peace, properity and blessings</p>
-          </div>
-          <div className='w-full text-center bg-card p-6 rounded-lg'>
-            <img
-              src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-              alt="Pandit performing puja"
-              className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
-            />
-            <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Wedding Puja</h3>
-            <p className=' text-lg'>Auspecious beginning for your new home</p>
-          </div>
-          <div className='w-full text-center bg-card p-6 rounded-lg'>
-            <img
-              src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-              alt="Pandit performing puja"
-              className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
-            />
-            <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Mundan Ceremony</h3>
-            <p className=' text-lg'>Auspecious beginning for your new home</p>
+
+          <div className=' w-full flex justify-center items-center mt-6'>
+            <button className=" text-[#7b2c00] flex items-center font-semibold px-4.5 py-2.5 rounded-lg bg-button hover:bg-yellow-300 cursor-pointer" onClick={() => navigate('/our-services')}>
+              View All &nbsp;
+              <FaLongArrowAltRight />
+            </button>
           </div>
         </div>
       </section>
-    </div>
+
+      {/* Book Pandit Section */}
+      <section className=' py-16'>
+        <div className=' w-[90%] max-w-4xl mx-auto flex items-center justify-center'>
+          <div className=''>
+            <h1 className=' text-yellow-100 text-7xl font-bold text-center capitalize'>Your Trusted <span className=' text-heading'>Pandit</span> Service in <span className=' text-orange-400'>Bangalore</span></h1>
+            <p className='text-base md:text-lg lg:text-xl text-slate-200 font-medium text-center mt-6 leading-relaxed'>Experience the <b className=' text-yellow-100'>divine</b> with our highly <b className=' text-yellow-100'>skilled Pandits</b> in Bangalore. Whether you’re looking for <b className=' text-yellow-100'>Hindi, North Indian, Bengali, Marathi, Odia, Kannada, Tamil,</b> or <b className=' text-yellow-100'>Telugu Pandits,</b> we ensure every ritual is performed with devotion and authenticity — from <b className=' text-yellow-100'>Griha Pravesh</b> to <b className=' text-yellow-100'>Satyanarayan Puja</b> and marriage ceremonies. Book your Pandit <b className=' text-yellow-100'>online</b> and bring <b className=' text-yellow-100'>sacred blessings</b> home effortlessly.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Chat with Pandits */}
+      <section className=' bg-background py-16'>
+        <div className=' w-[90%] max-w-7xl mx-auto'>
+          <h2 className='text-xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 bg-clip-text text-transparent text-center'>Connect Instantly with Verified Pandits</h2>
+        </div>
+      </section>
+
+      {/* Why choose divyaSeva */}
+      <section className=' bg-background py-16'>
+        <div className=' w-full max-w-7xl mx-auto '></div>
+      </section>
+    </>
   )
 }
 

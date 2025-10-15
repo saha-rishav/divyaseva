@@ -7,7 +7,7 @@ const MainLayout = () => {
     return (
         <div className='bg-[#9f2500] font-script'>
             <Navbar />
-            <main className='pt-[90px]  mx-auto py-2'>
+            <main className='pt-[100px] py-2'>
                 <Outlet />
             </main>
             <Footer />
