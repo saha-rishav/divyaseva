@@ -225,7 +225,7 @@ const Home = () => {
               </div>
             </div>
             <div className='flex flex-shrink-0 lg:flex-row flex-col items-center md:h-[220px] gap-2 bg-counterCard rounded-lg shadow-lg p-2.5'>
-            <img
+              <img
                 src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
                 alt="Pandit performing puja"
                 className="object-contain m-2 w-[40%]"
