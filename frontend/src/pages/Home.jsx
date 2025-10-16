@@ -1,6 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { pujaServices } from '../assets/assets';
+import ServiceCard from '../components/ServiceCard';
 
 const Home = () => {
 
@@ -95,45 +97,20 @@ const Home = () => {
       {/* Featured Pujas Section */}
       <section className="bg-background gap-6 py-10">
         <div className='w-[90%] max-w-7xl mx-auto pt-[40px]'>
-          <h1 className='text-secondary text-5xl font-bold text-center mb-9'>Featured Pujas</h1>
+          <h1 className='text-secondary text-5xl font-bold text-center mb-9'>Popular Pujas</h1>
 
           <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-2'>
-            <div className='w-full text-center bg-card p-6 rounded-lg'>
-              <img
-                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-                alt="Pandit performing puja"
-                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
-              />
-              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Griha Pravesh Puja</h3>
-              <p className=' text-lg'>Auspecious beginning for your new home</p>
-            </div>
-            <div className='w-full text-center bg-card p-6 rounded-lg'>
-              <img
-                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-                alt="Pandit performing puja"
-                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
-              />
-              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Satyanarayan Katha</h3>
-              <p className=' text-lg'>For peace, properity and blessings</p>
-            </div>
-            <div className='w-full text-center bg-card p-6 rounded-lg'>
-              <img
-                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-                alt="Pandit performing puja"
-                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
-              />
-              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Wedding Puja</h3>
-              <p className=' text-lg'>Auspecious beginning for your new home</p>
-            </div>
-            <div className='w-full text-center bg-card p-6 rounded-lg'>
-              <img
-                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-                alt="Pandit performing puja"
-                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
-              />
-              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Mundan Ceremony</h3>
-              <p className=' text-lg'>Auspecious beginning for your new home</p>
-            </div>
+            {
+              pujaServices.map((puja) => (
+                <ServiceCard
+                  key={puja.id}
+                  title={puja.title}
+                  description={puja.description}
+                  image={puja.image}
+                />
+              ))
+            }
+
           </div>
 
           <div className=' w-full flex justify-center items-center mt-6'>
@@ -218,3 +195,32 @@ const Home = () => {
 }
 
 export default Home;
+
+
+{/* <div className='w-full text-center bg-card p-6 rounded-lg'>
+              <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              />
+              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Satyanarayan Katha</h3>
+              <p className=' text-lg'>For peace, properity and blessings</p>
+            </div>
+            <div className='w-full text-center bg-card p-6 rounded-lg'>
+              <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              />
+              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Wedding Puja</h3>
+              <p className=' text-lg'>Auspecious beginning for your new home</p>
+            </div>
+            <div className='w-full text-center bg-card p-6 rounded-lg'>
+              <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              />
+              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Mundan Ceremony</h3>
+              <p className=' text-lg'>Auspecious beginning for your new home</p>
+            </div> */}
