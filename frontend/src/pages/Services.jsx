@@ -10,6 +10,10 @@ const Services = () => {
     { gradientFrom: "#e2643c", gradientTo: "#FA8072", iconColor: "#3b82f6" },
     { gradientFrom: "#f23525", gradientTo: "#ec6d25", iconColor: "#3b82f6" },
     { gradientFrom: "#fed496", gradientTo: "#f66d58", iconColor: "#9333ea" },
+    { gradientFrom: "#FFA07A", gradientTo: "#f6622d", iconColor: "#f59e0b" },
+    { gradientFrom: "#e2643c", gradientTo: "#FA8072", iconColor: "#3b82f6" },
+    { gradientFrom: "#f23525", gradientTo: "#ec6d25", iconColor: "#3b82f6" },
+    { gradientFrom: "#fed496", gradientTo: "#f66d58", iconColor: "#9333ea" },
   ];
   return (
     // <div className=' w-[90%] max-w-6xl mx-auto pt-[40px]'>
