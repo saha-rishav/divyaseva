@@ -212,10 +212,29 @@ const Home = () => {
       <section className=' py-16'>
         <div className=' w-[90%] max-w-7xl mx-auto'>
           <h2 className=' text-5xl text-center font-semibold text-heading'>Why DivyaSeva ?</h2>
-          <div className=' grid grid-cols-1 md:grid-cols-3 gap-3 mt-9'>
-            <div className='border-2 border-yellow-100 rounded-md'>1</div>
-            <div className='border-2 border-yellow-100 rounded-md'>2</div>
-            <div className='border-2 border-yellow-100 rounded-md'>3</div>
+          <div className=' max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 mt-9'>
+            <div className='flex flex-shrink-0 lg:flex-row flex-col items-center md:h-[220px] gap-2 bg-counterCard rounded-lg shadow-lg p-2.5'>
+              <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="object-contain m-2 w-[40%]"
+              />
+              <div>
+                <h3 className=' text-primary text-lg md:text-xl font-bold'>Seek Guidance from Pandit Ji — Free of Cost</h3>
+                <p className=' text-white font-medium'>Use our free chat feature to instantly connect with experienced Pandits. Get accurate guidance on auspicious timings, rituals, and ceremonies — all from a trusted source.</p>
+              </div>
+            </div>
+            <div className='flex flex-shrink-0 lg:flex-row flex-col items-center md:h-[220px] gap-2 bg-counterCard rounded-lg shadow-lg p-2.5'>
+            <img
+                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+                alt="Pandit performing puja"
+                className="object-contain m-2 w-[40%]"
+              />
+              <div>
+                <h3 className=' text-primary text-lg md:text-xl font-bold'>Schedule Your Puja with Verified Pandits</h3>
+                <p className=' text-white font-medium'>No more running from temple to temple — simply find and book verified Pandits online in just a few clicks, without leaving your home.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
