@@ -1,8 +1,9 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { pujaServices } from '../assets/assets';
+import { images, panditProfiles, pujaServices } from '../assets/assets';
 import ServiceCard from '../components/ServiceCard';
+import PanditCard from '../components/PanditCard';
 
 const Home = () => {
 
@@ -94,11 +95,70 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Book Pandit Section */}
+      <section className=' py-16'>
+        <div className=' w-[90%] max-w-4xl mx-auto '>
+          <div>
+            <h1 className=' text-yellow-100 text-7xl font-bold text-center capitalize'>Your Trusted <span className=' text-heading'>Pandit</span> Service in <span className=' text-orange-400'>Bangalore</span></h1>
+
+            <p className='text-base md:text-lg lg:text-xl text-slate-200 font-medium text-center mt-6 leading-relaxed'>Experience the <b className=' text-yellow-100'>divine</b> with our highly <b className=' text-yellow-100'>skilled Pandits</b> in Bangalore. Whether you’re looking for <b className=' text-yellow-100'>Hindi, North Indian, Bengali, Marathi, Odia, Kannada, Tamil,</b> or <b className=' text-yellow-100'>Telugu Pandits,</b> we ensure every ritual is performed with devotion and authenticity — from <b className=' text-yellow-100'>Griha Pravesh</b> to <b className=' text-yellow-100'>Satyanarayan Puja</b> and marriage ceremonies. Book your Pandit <b className=' text-yellow-100'>online</b> and bring <b className=' text-yellow-100'>sacred blessings</b> home effortlessly.</p>
+          </div>
+
+          <div className='max-w-2xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mt-8'>
+            <div className="flex flex-col justify-center items-center rounded-lg bg-counterCard p-[20px] transition-transform duration-200 hover:-translate-y-2 shadow-xl">
+              <div className="w-20 h-20 rounded-full overflow-hidden shadow-lg border-4 p-2 border-yellow-400 bg-card">
+                <img
+                  src={images.puja}
+                  alt="Puja"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h1 className="text-3xl font-bold text-primary mt-4">50+</h1>
+              <p className="text-lg text-yellow-100">Pujas</p>
+            </div>
+            <div className="flex flex-col justify-center items-center rounded-lg bg-counterCard p-[20px] transition-transform duration-200 hover:-translate-y-2 shadow-xl">
+              <div className="w-20 h-20 rounded-full overflow-hidden border-4 p-2 border-yellow-400 bg-card">
+                <img
+                  src={images.city}
+                  alt="Pandit performing puja"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h1 className="text-3xl font-bold text-primary mt-4">10</h1>
+              <p className="text-lg text-yellow-100">Cities</p>
+            </div>
+            <div className="flex flex-col justify-center items-center rounded-lg bg-counterCard p-[20px] transition-transform duration-200 hover:-translate-y-2 shadow-xl">
+              <div className="w-20 h-20 rounded-full overflow-hidden shadow-lg border-4 p-2 border-yellow-400 bg-card">
+                <img
+                  src={images.pandit}
+                  alt="Pandit performing puja"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h1 className="text-3xl font-bold text-primary mt-4">15+</h1>
+              <p className="text-lg text-yellow-100">Pandits</p>
+            </div>
+            <div className="flex flex-col justify-center items-center rounded-lg bg-counterCard p-[20px] transition-transform duration-200 hover:-translate-y-2 shadow-xl">
+              <div className="w-20 h-20 rounded-full overflow-hidden shadow-lg border-4 p-2 border-yellow-400 bg-card">
+                <img
+                  src={images.handshake}
+                  alt="Pandit performing puja"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h1 className="text-3xl font-bold text-primary mt-4">100+</h1>
+              <p className="text-lg text-yellow-100">Pujas Done</p>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
       {/* Featured Pujas Section */}
       <section className="bg-background gap-6 py-10">
         <div className='w-[90%] max-w-7xl mx-auto pt-[40px]'>
           <h1 className='text-secondary text-5xl font-bold text-center mb-9'>Popular Pujas</h1>
-
           <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-2'>
             {
               pujaServices.map((puja) => (
@@ -110,7 +170,6 @@ const Home = () => {
                 />
               ))
             }
-
           </div>
 
           <div className=' w-full flex justify-center items-center mt-6'>
@@ -122,16 +181,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Book Pandit Section */}
-      <section className=' py-16'>
-        <div className=' w-[90%] max-w-4xl mx-auto flex items-center justify-center'>
-          <div className=''>
-            <h1 className=' text-yellow-100 text-7xl font-bold text-center capitalize'>Your Trusted <span className=' text-heading'>Pandit</span> Service in <span className=' text-orange-400'>Bangalore</span></h1>
-            <p className='text-base md:text-lg lg:text-xl text-slate-200 font-medium text-center mt-6 leading-relaxed'>Experience the <b className=' text-yellow-100'>divine</b> with our highly <b className=' text-yellow-100'>skilled Pandits</b> in Bangalore. Whether you’re looking for <b className=' text-yellow-100'>Hindi, North Indian, Bengali, Marathi, Odia, Kannada, Tamil,</b> or <b className=' text-yellow-100'>Telugu Pandits,</b> we ensure every ritual is performed with devotion and authenticity — from <b className=' text-yellow-100'>Griha Pravesh</b> to <b className=' text-yellow-100'>Satyanarayan Puja</b> and marriage ceremonies. Book your Pandit <b className=' text-yellow-100'>online</b> and bring <b className=' text-yellow-100'>sacred blessings</b> home effortlessly.</p>
-          </div>
-        </div>
-      </section>
-
       {/* Chat with Pandits */}
       <section className=' bg-background py-16'>
         <div className=' w-[90%] max-w-7xl mx-auto'>
@@ -139,46 +188,19 @@ const Home = () => {
           <p className=' text-center text-sm md:text-base lg:text-lg'>Ask your questions directly to our Pandit Ji — completely free.</p>
 
           <div className=' grid grid-cols-2 lg:grid-cols-4 gap-4 mt-9'>
-            <div className='w-full text-center bg-card p-6 rounded-lg'>
-              <img
-                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-                alt="Pandit performing puja"
-                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+            {panditProfiles.map((pandit) => (
+              <PanditCard
+                key={pandit.id}
+                name={pandit.name}
+                experience={pandit.experience}
+                specialties={pandit.specialties}
+                image={pandit.image}
               />
-              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Mundan Ceremony</h3>
-              <p className=' text-lg'>Auspecious beginning for your new home</p>
-            </div>
-            <div className='w-full text-center bg-card p-6 rounded-lg'>
-              <img
-                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-                alt="Pandit performing puja"
-                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
-              />
-              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Mundan Ceremony</h3>
-              <p className=' text-lg'>Auspecious beginning for your new home</p>
-            </div>
-            <div className='w-full text-center bg-card p-6 rounded-lg'>
-              <img
-                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-                alt="Pandit performing puja"
-                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
-              />
-              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Mundan Ceremony</h3>
-              <p className=' text-lg'>Auspecious beginning for your new home</p>
-            </div>
-            <div className='w-full text-center bg-card p-6 rounded-lg'>
-              <img
-                src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-                alt="Pandit performing puja"
-                className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
-              />
-              <h3 className=' text-2xl text-secondary font-semibold mt-4 mb-2'>Mundan Ceremony</h3>
-              <p className=' text-lg'>Auspecious beginning for your new home</p>
-            </div>
+            ))}
           </div>
 
           <div className=' w-full flex justify-center items-center mt-6'>
-            <button className=" text-[#7b2c00] flex items-center font-semibold px-4.5 py-2.5 rounded-lg bg-button hover:bg-yellow-300 cursor-pointer" onClick={() => navigate('/our-services')}>
+            <button className=" text-[#7b2c00] flex items-center font-semibold px-4.5 py-2.5 rounded-lg bg-button hover:bg-yellow-300 cursor-pointer" onClick={() => navigate('/our-pandits')}>
               Show All &nbsp;
               <FaLongArrowAltRight />
             </button>
@@ -187,9 +209,19 @@ const Home = () => {
       </section>
 
       {/* Why choose divyaSeva */}
-      <section className=' bg-background py-16'>
-        <div className=' w-full max-w-7xl mx-auto '></div>
+      <section className=' py-16'>
+        <div className=' w-[90%] max-w-7xl mx-auto'>
+          <h2 className=' text-5xl text-center font-semibold text-heading'>Why DivyaSeva ?</h2>
+          <div className=' grid grid-cols-1 md:grid-cols-3 gap-3 mt-9'>
+            <div className='border-2 border-yellow-100 rounded-md'>1</div>
+            <div className='border-2 border-yellow-100 rounded-md'>2</div>
+            <div className='border-2 border-yellow-100 rounded-md'>3</div>
+          </div>
+        </div>
       </section>
+
+      {/* Testimonials */}
+      <section className=' bg-background py-16'></section>
     </>
   )
 }
