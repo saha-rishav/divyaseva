@@ -15,10 +15,10 @@ const Home = () => {
       <section className='relative'>
         <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] max-w-7xl mx-auto items-center gap-6 pt-16 pb-[70px] ">
           <div className="w-[90%]">
-            <h1 className="text-4xl lg:text-7xl text-heading font-semibold capitalize  mb-6">
+            <h1 className="text-4xl md:text-7xl text-heading font-semibold capitalize  mb-6">
               Book Trusted Pandits for All Your Puja Needs
             </h1>
-            <p className="text-xl mb-6 text-yellow-100 leading-relaxed">
+            <p className="text-md md:text-xl mb-6 text-yellow-100 leading-relaxed">
               Hassle-free online booking for all pujas — Griha Pravesh, Satyanarayan Puja,
               Wedding rituals, and more. Get authentic Vedic Pandits at your doorstep.
             </p>
@@ -82,10 +82,10 @@ const Home = () => {
             />
           </div>
           <div className="w-[90%]">
-            <h1 className="text-4xl lg:text-5xl font-script text-secondary font-semibold capitalize  mb-6">
+            <h2 className="text-3xl md:text-5xl font-script text-secondary font-semibold capitalize mb-3 md:mb-6">
               About Us
-            </h1>
-            <p className="text-xl mb-6  leading-relaxed">
+            </h2>
+            <p className="text-md md:text-xl mb-6  leading-relaxed">
               At DivyaSeva, we make it easy to connect with authentic Vedic Pandits for every important occasion in your life — from Griha Pravesh to Wedding Puja and beyond. Our mission is to help you perform sacred rituals with devotion, guidance, and peace of mind.
             </p>
             <button className="bg-button text-[#7b2c00] font-semibold px-4.5 py-2.5 rounded-lg hover:bg-yellow-300 cursor-pointer" onClick={() => navigate('/about-us')}>
@@ -99,12 +99,12 @@ const Home = () => {
       <section className=' py-16'>
         <div className=' w-[90%] max-w-4xl mx-auto '>
           <div>
-            <h1 className=' text-yellow-100 text-7xl font-bold text-center capitalize'>Your Trusted <span className=' text-heading'>Pandit</span> Service in <span className=' text-orange-400'>Bangalore</span></h1>
+            <h1 className=' text-yellow-100 text-5xl md:text-7xl font-bold text-center capitalize'>Your Trusted <span className=' text-heading'>Pandit</span> Service in <span className=' text-orange-400'>Bangalore</span></h1>
 
             <p className='text-base md:text-lg lg:text-xl text-slate-200 font-medium text-center mt-6 leading-relaxed'>Experience the <b className=' text-yellow-100'>divine</b> with our highly <b className=' text-yellow-100'>skilled Pandits</b> in Bangalore. Whether you’re looking for <b className=' text-yellow-100'>Hindi, North Indian, Bengali, Marathi, Odia, Kannada, Tamil,</b> or <b className=' text-yellow-100'>Telugu Pandits,</b> we ensure every ritual is performed with devotion and authenticity — from <b className=' text-yellow-100'>Griha Pravesh</b> to <b className=' text-yellow-100'>Satyanarayan Puja</b> and marriage ceremonies. Book your Pandit <b className=' text-yellow-100'>online</b> and bring <b className=' text-yellow-100'>sacred blessings</b> home effortlessly.</p>
           </div>
 
-          <div className='max-w-2xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mt-8'>
+          <div className='max-w-2xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-8'>
             <div className="flex flex-col justify-center items-center rounded-lg bg-counterCard p-[20px] transition-transform duration-200 hover:-translate-y-2 shadow-xl">
               <div className="w-20 h-20 rounded-full overflow-hidden shadow-lg border-4 p-2 border-yellow-400 bg-card">
                 <img
@@ -158,8 +158,8 @@ const Home = () => {
       {/* Featured Pujas Section */}
       <section className="bg-background gap-6 py-10">
         <div className='w-[90%] max-w-7xl mx-auto pt-[40px]'>
-          <h1 className='text-secondary text-5xl font-bold text-center mb-9'>Popular Pujas</h1>
-          <div className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-2'>
+          <h2 className='text-secondary text-3xl md:text-5xl font-bold text-center mb-6 md:mb-9'>Popular Pujas</h2>
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-2'>
             {
               pujaServices.map((puja) => (
                 <ServiceCard
@@ -184,10 +184,10 @@ const Home = () => {
       {/* Chat with Pandits */}
       <section className=' bg-background py-16'>
         <div className=' w-[90%] max-w-7xl mx-auto'>
-          <h2 className='text-xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 bg-clip-text text-transparent text-center mb-3'>Connect Instantly with Verified Pandits</h2>
-          <p className=' text-center text-sm md:text-base lg:text-lg'>Ask your questions directly to our Pandit Ji — completely free.</p>
+          <h2 className='text-3xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 bg-clip-text text-transparent text-center mb-3'>Connect Instantly with Verified Pandits</h2>
+          <p className=' text-center text-md lg:text-lg'>Ask your questions directly to our Pandit Ji — completely free.</p>
 
-          <div className=' grid grid-cols-2 lg:grid-cols-4 gap-4 mt-9'>
+          <div className=' grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mt-9'>
             {panditProfiles.map((pandit) => (
               <PanditCard
                 key={pandit.id}
@@ -211,9 +211,9 @@ const Home = () => {
       {/* Why choose divyaSeva */}
       <section className=' py-16'>
         <div className=' w-[90%] max-w-7xl mx-auto'>
-          <h2 className=' text-5xl text-center font-semibold text-heading'>Why DivyaSeva ?</h2>
+          <h2 className=' text-3xl md:text-5xl text-center font-semibold text-heading'>Why DivyaSeva ?</h2>
           <div className=' max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 mt-9'>
-            <div className='flex flex-shrink-0 lg:flex-row flex-col items-center md:h-[220px] gap-2 bg-counterCard rounded-lg shadow-lg p-2.5'>
+            <div className='flex flex-shrink-0 lg:flex-row flex-col items-center md:h-[220px] gap-2 bg-counterCard rounded-lg shadow-lg p-2.5 transition-transform duration-200 hover:-translate-y-2'>
               <img
                 src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
                 alt="Pandit performing puja"
@@ -224,7 +224,7 @@ const Home = () => {
                 <p className=' text-white font-medium'>Use our free chat feature to instantly connect with experienced Pandits. Get accurate guidance on auspicious timings, rituals, and ceremonies — all from a trusted source.</p>
               </div>
             </div>
-            <div className='flex flex-shrink-0 lg:flex-row flex-col items-center md:h-[220px] gap-2 bg-counterCard rounded-lg shadow-lg p-2.5'>
+            <div className='flex flex-shrink-0 lg:flex-row flex-col items-center md:h-[220px] gap-2 bg-counterCard rounded-lg shadow-lg p-2.5 transition-transform duration-200 hover:-translate-y-2'>
               <img
                 src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
                 alt="Pandit performing puja"
