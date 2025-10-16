@@ -8,6 +8,7 @@ export const menuLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about-us' },
     { name: 'Pujas', path: '/our-services' },
+    { name: 'Pandits', path: '/our-pandits' },
 ]
 
 export const pujaServices = [
