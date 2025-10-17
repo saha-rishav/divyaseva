@@ -37,69 +37,66 @@
 
 // export default ServicePageCard
 
-import React from "react";
+// import React from "react";
 
-const ServicePageCard = ({ gradientFrom, gradientTo, }) => {
-    return (
-        <div className="relative bg-card rounded-2xl shadow-lg  text-center overflow-hidden pb-5">
-            {/* Top gradient background */}
-            <div
-                className="w-full h-26 flex justify-center items-center relative"
-                style={{ background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`, }}>
-                <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 w-28 h-28 rounded-full bg-gradient-to-tr from-white to-gray-100 shadow-xl flex items-center justify-center">
-                    {/* Gradient Glow Ring */}
-                    <div
-                        className="absolute inset-0 rounded-full blur-md opacity-80"
-                        style={{
-                            background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
-                            zIndex: -1,
-                        }}
-                    ></div>
+// const ServicePageCard = ({ gradientFrom, gradientTo, }) => {
+//     return (
+//         <div className="relative bg-card rounded-2xl shadow-lg  text-center overflow-hidden pb-5">
+//             {/* Top gradient background */}
+//             <div className="w-full h-26 flex justify-center items-center relative"
+//                 style={{ background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`, }}>
+//                 <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 w-28 h-28 rounded-full bg-gradient-to-tr from-white to-gray-100 shadow-xl flex items-center justify-center">
+//                     {/* Gradient Glow Ring */}
+//                     <div className="absolute inset-0 rounded-full blur-md opacity-80"
+//                         style={{
+//                             background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+//                             zIndex: -1,
+//                         }}>
+//                     </div>
 
-                    {/* Dotted Border */}
-                    <div
-                        className="absolute inset-0 rounded-full border-[3px] border-dashed"
-                        style={{
-                            borderColor: gradientFrom,
-                        }}
-                    ></div>
+//                     {/* Dotted Border */}
+//                     <div className="absolute inset-0 rounded-full border-[3px] border-dashed"
+//                         style={{
+//                             borderColor: gradientFrom,
+//                         }}>
+//                     </div>
 
-                    {/* Inner Image Circle */}
-                    <div className="w-24 h-24 rounded-full overflow-hidden bg-white shadow-md flex items-center justify-center">
-                        <img
-                            src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
-                            alt="Pandit performing puja"
-                            className="w-full h-full object-cover"
-                        />
-                    </div>
-                </div>
-            </div>
+//                     {/* Inner Image Circle */}
+//                     <div className="w-24 h-24 rounded-full overflow-hidden bg-white shadow-md flex items-center justify-center">
+//                         <img
+//                             src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+//                             alt="Pandit performing puja"
+//                             className="w-full h-full object-cover"
+//                         />
+//                     </div>
+//                 </div>
+//             </div>
 
-            {/* Content */}
-            <div className="mt-12 px-3">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-2">Congratulations!</h2>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
-                    tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
+//             {/* Content */}
+//             <div className="mt-12 px-3">
+//                 <h2 className="text-2xl font-semibold text-gray-800 mb-2">Congratulations!</h2>
+//                 <p className="text-gray-500 text-sm leading-relaxed">
+//                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+//                     tincidunt ut laoreet dolore magna aliquam erat volutpat.
+//                 </p>
 
-                {/* Buttons */}
-                <div className="flex flex-col items-center gap-3 mt-6">
-                    <button
-                        className="flex items-center justify-center gap-2 text-white px-8 py-2 rounded-full font-medium"
-                        style={{
-                            background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
-                        }}
-                    >
-                        Book Now
-                    </button>
-                </div>
-            </div>
-        </div>
-    );
-};
+//                 {/* Buttons */}
+//                 <div className="flex flex-col items-center gap-3 mt-6">
+//                     <button
+//                         className="flex items-center justify-center gap-2 text-white px-8 py-2 rounded-full font-medium"
+//                         style={{
+//                             background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+//                         }}
+//                     >
+//                         Book Now
+//                     </button>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };
 
-export default ServicePageCard;
+// export default ServicePageCard;
 
 
 
@@ -158,3 +155,64 @@ export default ServicePageCard;
 //         </button>
 //     </div>
 // </div>
+
+
+import React from "react";
+
+const ServicePageCard = ({ gradientFrom, gradientTo, title, description, image }) => {
+    return (
+        <div className="relative bg-card rounded-2xl shadow-lg text-center overflow-hidden pb-5 group transition-transform duration-300 hover:-translate-y-1">
+            {/* Top gradient background */}
+            <div
+                className="w-full h-26 flex justify-center items-center relative"
+                style={{
+                    background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+                }}
+            >
+                <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 w-28 h-28 rounded-full bg-gradient-to-tr from-white to-gray-100 shadow-xl flex items-center justify-center">
+                    {/* Gradient Glow */}
+                    <div
+                        className="absolute inset-0 rounded-full blur-md opacity-80"
+                        style={{
+                            background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+                            zIndex: -1,
+                        }}
+                    />
+                    {/* Dotted Border */}
+                    <div
+                        className="absolute inset-0 rounded-full border-[3px] border-dashed"
+                        style={{ borderColor: gradientFrom }}
+                    />
+                    {/* Image */}
+                    <div className="w-24 h-24 rounded-full overflow-hidden bg-white shadow-md flex items-center justify-center 
+  transform transition-all duration-500 ease-out group-hover:-translate-y-3 group-hover:scale-105">
+                        <img
+                            src={image}
+                            alt={title}
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            {/* Content */}
+            <div className="mt-12 px-3">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-2">{title}</h2>
+                <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
+
+                <div className="flex flex-col items-center gap-3 mt-6">
+                    <button
+                        className="w-[75%] flex items-center justify-center gap-2 text-white px-8 py-2 rounded-full font-medium cursor-pointer"
+                        style={{
+                            background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
+                        }}
+                    >
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default ServicePageCard;
