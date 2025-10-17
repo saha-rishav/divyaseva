@@ -6,6 +6,7 @@ import Signup from './pages/Signup'
 import MainLayout from './layouts/MainLayout'
 import About from './pages/About'
 import Services from './pages/Services'
+import Pandits from './pages/Pandits'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/about-us' element={<About />} />
           <Route path='/our-services' element={<Services />} />
+          <Route path='/our-pandits' element={<Pandits />} />
         </Route>
 
         {/* Auth Routes (no layout) */}

@@ -149,8 +149,6 @@ const Home = () => {
               <h1 className="text-3xl font-bold text-primary mt-4">100+</h1>
               <p className="text-lg text-yellow-100">Pujas Done</p>
             </div>
-
-
           </div>
         </div>
       </section>
