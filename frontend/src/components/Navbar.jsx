@@ -49,7 +49,7 @@
 import React, { useEffect, useState } from 'react';
 import { images, menuLinks } from '../assets/assets.js';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa'; // for hamburger icons
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -60,12 +60,11 @@ const Navbar = () => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 0);
         };
-
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Close menu on route change (optional)
+    // Close menu on resize
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth >= 768) setIsOpen(false);
@@ -78,7 +77,7 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
             <div
                 className={`w-[90%] max-w-7xl mx-auto mt-1.5 flex justify-between items-center rounded-2xl py-3 transition-all duration-300
-          ${isScrolled
+                ${isScrolled
                         ? 'bg-[#cc3102] border border-transparent shadow-md pe-4 ps-2 md:px-6'
                         : 'bg-transparent border border-transparent'
                     }`}
@@ -110,27 +109,36 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* Mobile Dropdown Menu */}
+            {/* Mobile Full-Screen Slide Menu with Transparent Background */}
             <div
-                className={`md:hidden absolute top-[70px] left-0 w-full bg-[#ee410d] shadow-md transition-all duration-300 overflow-hidden
-          ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
-        `}
+                className={`fixed top-0 right-0 h-screen w-full bg-[#ee410ddb] backdrop-blur-sm 
+                flex flex-col items-center justify-center gap-8 text-white text-xl font-semibold
+                transform transition-transform duration-500 ease-in-out 
+                ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+                md:hidden z-40`}
             >
-                <div className="flex flex-col items-center gap-6 py-6">
-                    {menuLinks.map((link, index) => (
-                        <Link
-                            key={index}
-                            to={link.path}
-                            onClick={() => setIsOpen(false)}
-                            className="font-semibold text-white hover:text-yellow-300 transition text-lg"
-                        >
-                            {link.name}
-                        </Link>
-                    ))}
-                </div>
+                {/* Close Button inside menu */}
+                <button
+                    onClick={() => setIsOpen(false)}
+                    className="absolute top-6 right-6 text-3xl text-white"
+                >
+                    <FaTimes />
+                </button>
+
+                {menuLinks.map((link, index) => (
+                    <Link
+                        key={index}
+                        to={link.path}
+                        onClick={() => setIsOpen(false)}
+                        className="hover:text-yellow-300 transition"
+                    >
+                        {link.name}
+                    </Link>
+                ))}
             </div>
         </nav>
     );
 };
 
 export default Navbar;
+
