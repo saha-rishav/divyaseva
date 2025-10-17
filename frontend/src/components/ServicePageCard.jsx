@@ -163,29 +163,24 @@ const ServicePageCard = ({ gradientFrom, gradientTo, title, description, image }
     return (
         <div className="relative bg-card rounded-2xl shadow-lg text-center overflow-hidden pb-5 group transition-transform duration-300 hover:-translate-y-1">
             {/* Top gradient background */}
-            <div
-                className="w-full h-26 flex justify-center items-center relative"
+            <div className="w-full h-26 flex justify-center items-center relative"
                 style={{
                     background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
-                }}
-            >
-                <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 w-28 h-28 rounded-full bg-gradient-to-tr from-white to-gray-100 shadow-xl flex items-center justify-center">
+                }}>
+                <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 w-34 h-34 rounded-full bg-gradient-to-tr from-white to-gray-100 shadow-xl flex items-center justify-center">
                     {/* Gradient Glow */}
-                    <div
-                        className="absolute inset-0 rounded-full blur-md opacity-80"
+                    <div className="absolute inset-0 rounded-full blur-md opacity-80"
                         style={{
                             background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
                             zIndex: -1,
                         }}
                     />
                     {/* Dotted Border */}
-                    <div
-                        className="absolute inset-0 rounded-full border-[3px] border-dashed"
+                    <div className="absolute inset-0 rounded-full border-[3px] border-dashed"
                         style={{ borderColor: gradientFrom }}
                     />
                     {/* Image */}
-                    <div className="w-24 h-24 rounded-full overflow-hidden bg-white shadow-md flex items-center justify-center 
-  transform transition-all duration-500 ease-out group-hover:-translate-y-3 group-hover:scale-105">
+                    <div className="w-28 h-28 rounded-full overflow-hidden bg-white shadow-md flex items-center justify-center transform transition-all duration-500 ease-out group-hover:-translate-y-3 group-hover:scale-105">
                         <img
                             src={image}
                             alt={title}
@@ -197,16 +192,14 @@ const ServicePageCard = ({ gradientFrom, gradientTo, title, description, image }
 
             {/* Content */}
             <div className="mt-12 px-3">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-2">{title}</h2>
+                <h2 className="text-2xl font-semibold text-secondary mb-2">{title}</h2>
                 <p className="text-gray-500 text-sm leading-relaxed">{description}</p>
 
                 <div className="flex flex-col items-center gap-3 mt-6">
-                    <button
-                        className="w-[75%] flex items-center justify-center gap-2 text-white px-8 py-2 rounded-full font-medium cursor-pointer"
+                    <button className="w-[75%] flex items-center justify-center gap-2 text-white px-8 py-2 rounded-full font-medium cursor-pointer"
                         style={{
                             background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
-                        }}
-                    >
+                        }}>
                         Book Now
                     </button>
                 </div>
