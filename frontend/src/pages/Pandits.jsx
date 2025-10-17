@@ -12,6 +12,8 @@ const Pandits = () => {
                         name={pandit.name}
                         experience={pandit.experience}
                         image={pandit.image}
+                        bgColor="bg-counterCard"
+                        headingColor="text-primary"
                     />
                 ))}
             </div>

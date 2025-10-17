@@ -1,8 +1,8 @@
 import logo from './logo.png';
-import city from './city.png';
-import pandit from './Pandit.png';
-import puja from './puja.png';
-import handshake from './ShakeHands.png';
+import city from './1png.png';
+import pandit from './4png.png';
+import puja from './3png.png';
+import handshake from './2png.png';
 
 export const images = {
     logo,
@@ -14,9 +14,9 @@ export const images = {
 
 export const menuLinks = [
     { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about-us' },
-    { name: 'Pujas', path: '/our-services' },
-    { name: 'Pandits', path: '/our-pandits' },
+    { name: 'About Us', path: '/' },
+    { name: 'Pujas', path: '/' },
+    { name: 'Pandits', path: '/' },
 ]
 
 export const pujaServices = [
@@ -50,28 +50,28 @@ export const panditProfiles = [
     {
         id: 1,
         name: "Pandit Ram Sharma",
-        experience: "10 years",
+        experience: "10 yrs",
         specialties: ["Griha Pravesh", "Satyanarayan Katha"],
         image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
     },
     {
         id: 2,
         name: "Pandit Ram Sharma",
-        experience: "10 years",
+        experience: "10 yrs",
         specialties: ["Griha Pravesh", "Satyanarayan Katha"],
         image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
     },
     {
         id: 3,
         name: "Pandit Ram Sharma",
-        experience: "10 years",
+        experience: "10 yrs",
         specialties: ["Griha Pravesh", "Satyanarayan Katha"],
         image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
     },
     {
         id: 4,
         name: "Pandit Ram Sharma",
-        experience: "10 years",
+        experience: "10 yrs",
         specialties: ["Griha Pravesh", "Satyanarayan Katha"],
         image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
     }
