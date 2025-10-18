@@ -180,7 +180,7 @@ const ServicePageCard = ({ gradientFrom, gradientTo, title, description, image }
                         style={{ borderColor: gradientFrom }}
                     />
                     {/* Image */}
-                    <div className="w-28 h-28 rounded-full overflow-hidden bg-white shadow-md flex items-center justify-center transform transition-all duration-500 ease-out group-hover:-translate-y-3 group-hover:scale-105">
+                    <div className="w-28 h-28 rounded-full overflow-hidden shadow-md flex items-center justify-center transform transition-all duration-500 ease-out group-hover:-translate-y-3 group-hover:scale-105">
                         <img
                             src={image}
                             alt={title}

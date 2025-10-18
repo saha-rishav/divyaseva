@@ -7,6 +7,7 @@ import MainLayout from './layouts/MainLayout'
 import About from './pages/About'
 import Services from './pages/Services'
 import Pandits from './pages/Pandits'
+import ServiceDetails from './components/ServiceDetails'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/about-us' element={<About />} />
           <Route path='/our-services' element={<Services />} />
           <Route path='/our-pandits' element={<Pandits />} />
+          <Route path='/service-details' element={<ServiceDetails />} />
         </Route>
 
         {/* Auth Routes (no layout) */}

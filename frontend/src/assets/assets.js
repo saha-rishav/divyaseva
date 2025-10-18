@@ -3,28 +3,30 @@ import city from './1png.png';
 import pandit from './4png.png';
 import puja from './3png.png';
 import handshake from './2png.png';
+import janmasthami from './janmasthami.png';
 
 export const images = {
     logo,
     city,
     pandit,
     puja,
-    handshake
+    handshake,
+    janmasthami
 }
 
 export const menuLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/' },
-    { name: 'Pujas', path: '/' },
-    { name: 'Pandits', path: '/' },
+    { name: 'Pujas', path: '/our-services' },
+    { name: 'Pandits', path: '/our-pandits' },
 ]
 
 export const pujaServices = [
     {
         id: 1,
-        title: "Griha Pravesh Puja",
+        title: "Janmasthami Puja",
         description: "Auspicious beginning for your new home",
-        image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
+        image: janmasthami,
     },
     {
         id: 2,
