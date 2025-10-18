@@ -68,7 +68,7 @@ const Services = () => {
   }));
 
   return (
-    <div className="w-[90%] max-w-7xl mx-auto pt-[40px]">
+    <div className="w-[90%] max-w-6xl mx-auto pt-[40px]">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {combinedData.map((card) => (
           <ServicePageCard
