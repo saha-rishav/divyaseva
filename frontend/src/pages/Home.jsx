@@ -13,7 +13,7 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section className='relative'>
-        <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] max-w-7xl mx-auto items-center gap-6 pt-7 md:pt-16 pb-[70px] ">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] max-w-7xl mx-auto items-center gap-2 md:gap-6 pt-7 md:pt-16 pb-[70px] ">
           <div className="w-[90%]">
             <h1 className="text-4xl md:text-7xl text-heading font-semibold capitalize mb-4 md:mb-6">
               Book Trusted Pandits for All Your Puja Needs
@@ -35,9 +35,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className=' hidden md:flex absolute bottom-[-85px] left-1/2 transform -translate-x-1/2 w-[95%] max-w-5xl mx-auto border border-primary backdrop-filter backdrop-blur-md bg-opacity-20 rounded-2xl shadow-lg px-6 py-10  flex-col md:flex-row items-center justify-between gap-4'>
+        <div className=' md:flex absolute bottom-[-300px] md:bottom-[-85px] left-1/2 transform -translate-x-1/2 w-[95%] max-w-5xl mx-auto border border-primary backdrop-filter backdrop-blur-md bg-opacity-20 rounded-2xl shadow-lg px-6 py-10  flex-col md:flex-row items-center justify-between gap-4'>
           <div className="flex flex-col w-full md:w-1/3">
-            <label className="font-semibold text-primary mb-1">Select Puja *</label>
+            <label className="font-semibold text-[#9f2500] md:text-primary mb-2.5">Select Puja *</label>
             <input
               type="text"
               placeholder="e.g., Satyanarayan Katha"
@@ -45,8 +45,8 @@ const Home = () => {
             />
           </div>
 
-          <div className="flex flex-col w-full md:w-1/3">
-            <label className="font-semibold text-primary mb-1">Puja Tradition *</label>
+          <div className="flex flex-col w-full py-3 md:py-0 md:w-1/3">
+            <label className="font-semibold text-[#9f2500] md:text-primary mb-2.5">Puja Tradition *</label>
             <input
               type="text"
               placeholder="e.g., Bengali, South Indian, Hindi"
@@ -54,26 +54,26 @@ const Home = () => {
             />
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-3 w-full md:w-auto">
+          <div className="flex flex-col items-center gap-3 w-full md:w-auto">
             <div className="flex items-center gap-2">
-              <label className="font-semibold text-[#9f2500]">Need Puja Samagri?</label>
+              <label className="font-semibold text-[#9f2500] md:text-primary">Need Puja Samagri?</label>
               <input
                 type="checkbox"
                 className="toggle-checkbox accent-yellow-400 w-5 h-5"
               />
             </div>
-            {/* <button
+            <button
               className="bg-yellow-400 text-[#7b2c00] font-semibold px-6 py-3 rounded-lg hover:bg-yellow-300 transition-all w-full md:w-auto"
             >
               Continue
-            </button> */}
+            </button>
           </div>
         </div>
       </section>
 
       {/* About Us Section */}
       <section className=" bg-background py-16">
-        <div className='w-[90%] max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center pt-0 md:pt-[100px] gap-6 '>
+        <div className='w-[90%] max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center pt-[300px] md:pt-[100px] gap-6 '>
           <div className="mt-3 md:mt-0 flex justify-center items-center">
             <img
               src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
