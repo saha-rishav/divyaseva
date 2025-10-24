@@ -5,7 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 const PanditCard = ({ name, experience, image, bgColor = 'bg-card', headingColor = 'text-secondary' }) => {
     return (
         <div className={`w-full text-center ${bgColor} p-2.5 md:p-4 rounded-lg transition-transform duration-200 hover:-translate-y-2 shadow-xl`}>
-            <div className='w-32 h-32 md:w-36 md:h-36 mx-auto rounded-full overflow-hidden border-4 border-yellow-200 shadow-lg flex items-center justify-center'>
+            <div className='w-28 h-28 md:w-36 md:h-36 mx-auto rounded-full overflow-hidden border-4 border-yellow-200 shadow-lg flex items-center justify-center'>
                 <img
                     src={image}
                     alt="Pandit performing puja"
