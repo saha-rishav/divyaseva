@@ -76,9 +76,10 @@ const Home = () => {
         <div className='w-[90%] max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center pt-[300px] md:pt-[100px] gap-6 '>
           <div className="mt-3 md:mt-0 flex justify-center items-center">
             <img
-              src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+              // src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+              src={images.Pandit}
               alt="Pandit performing puja"
-              className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              className="w-72 md:w-[450px] rounded-xl"
             />
           </div>
           <div className="w-[90%]">
