@@ -5,6 +5,7 @@ import puja from './3png.png';
 import handshake from './2png.png';
 import janmasthami from './janmasthami.png';
 import Pandit from './about-home.png';
+import Hero from './hero.png';
 
 export const images = {
     logo,
@@ -13,7 +14,8 @@ export const images = {
     puja,
     handshake,
     janmasthami,
-    Pandit
+    Pandit,
+    // Hero
 }
 
 export const menuLinks = [

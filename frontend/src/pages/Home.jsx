@@ -13,8 +13,8 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section className='relative'>
-        <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] max-w-7xl mx-auto items-center gap-2 md:gap-6 pt-7 md:pt-16 pb-[70px] ">
-          <div className="w-[90%]">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] max-w-7xl mx-auto items-center gap-2 md:gap-6 pt-7 md:pt-2 pb-[70px] ">
+          <div className="w-[95%]">
             <h1 className="text-4xl md:text-7xl text-heading font-semibold capitalize mb-4 md:mb-6">
               Book Trusted Pandits for All Your Puja Needs
             </h1>
@@ -28,9 +28,10 @@ const Home = () => {
           </div>
           <div className="mt-3 md:mt-0 flex justify-center items-center">
             <img
-              src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+              // src="https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg"
+              src={images.Hero}
               alt="Pandit performing puja"
-              className="w-72 md:w-[400px] rounded-xl shadow-lg border-4 border-yellow-400"
+              className="w-full h-auto object-cover"
             />
           </div>
         </div>
