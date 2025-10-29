@@ -72,7 +72,7 @@ const About = () => {
                 <p className=' text-white font-medium'>To make spiritual services accessible, transparent, and reliable for every devotee seeking divine blessings</p>
               </div>
             </div>
-            <div className='flex flex-shrink-0 lg:flex-row flex-col items-center md:items-start md:h-[220px] gap-2 bg-counterCard rounded-lg shadow-lg p-2.5 transition-transform duration-200 hover:-translate-y-2'>
+            <div className='flex flex-shrink-0 lg:flex-row flex-col items-center md:items-start md:h-[220px] gap-2 bg-counterCard rounded-lg shadow-lg p-6 md:p-2.5 transition-transform duration-200 hover:-translate-y-2'>
               <img
                 src={images.Vision}
                 alt="Pandit performing puja"
