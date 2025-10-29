@@ -15,7 +15,7 @@ export const images = {
     handshake,
     janmasthami,
     Pandit,
-    // Hero
+    Hero
 }
 
 export const menuLinks = [
