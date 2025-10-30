@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { images } from '../assets/assets'
 
 const About = () => {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }, [])
+
   return (
     <>
       {/* About Us */}
