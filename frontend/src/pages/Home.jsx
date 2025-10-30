@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { images, panditProfiles, pujaServices } from '../assets/assets';
@@ -8,6 +8,13 @@ import PanditCard from '../components/PanditCard';
 const Home = () => {
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }, [])
 
   return (
     <>

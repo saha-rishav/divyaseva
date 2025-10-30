@@ -59,8 +59,6 @@ const About = () => {
                   See More
                 </button> */}
           </div>
-
-
         </div>
       </section>
 
@@ -68,27 +66,42 @@ const About = () => {
       <section className='py-16'>
         <div className=' w-[90%] max-w-7xl mx-auto'>
           <h2 className=' text-3xl md:text-5xl text-center font-semibold text-heading'>Our Mission & Vision</h2>
-          <div className=' max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 mt-9'>
-            <div className='flex flex-shrink-0 lg:flex-row flex-col items-center md:items-start md:h-[220px] gap-2 bg-counterCard rounded-lg shadow-lg p-6 md:p-2.5 transition-transform duration-200 hover:-translate-y-2'>
-              <img
-                src={images.Mission}
-                alt="Pandit performing puja"
-                className="object-contain m-2 h-[100%] w-full md:w-[50%]"
-              />
-              <div className='py-0 pb-3 md:pb-0 md:py-8'>
-                <h3 className=' text-primary text-lg md:text-xl font-bold'>Mission</h3>
-                <p className=' text-white font-medium'>To make spiritual services accessible, transparent, and reliable for every devotee seeking divine blessings</p>
+          <div className=' max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5 mt-9'>
+            {/* Mission */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 bg-counterCard rounded-lg shadow-lg overflow-hidden transition-transform duration-200 hover:-translate-y-2">
+              <div className="h-full md:h-[220px] flex items-center justify-center">
+                <img
+                  src={images.Mission}
+                  alt="Pandit performing puja"
+                  className="w-[90%] h-full object-contain"
+                />
+              </div>
+              <div className="flex flex-col justify-center p-6 pt-0 px-4 lg:px-6 lg:pt-6">
+                <h3 className="text-primary text-lg md:text-xl font-bold mb-2">
+                  Mission
+                </h3>
+                <p className="text-white font-medium">
+                  To make spiritual services accessible, transparent, and reliable for every devotee seeking divine blessings.
+                </p>
               </div>
             </div>
-            <div className='flex flex-shrink-0 lg:flex-row flex-col items-center md:items-start md:h-[220px] gap-2 bg-counterCard rounded-lg shadow-lg p-6 md:p-2.5 transition-transform duration-200 hover:-translate-y-2'>
-              <img
-                src={images.Vision}
-                alt="Pandit performing puja"
-                className="object-contain m-2 h-[100%] w-full md:w-[50%]"
-              />
-              <div className='py-0 pb-3 md:pb-0 md:py-8'>
-                <h3 className=' text-primary text-lg md:text-xl font-bold'>Vision</h3>
-                <p className=' text-white font-medium'>To become Indias most trusted platform for authentic Vedic rituals - preserying our culture heritage while embracing digital ease.</p>
+
+            {/* Vision */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 bg-counterCard rounded-lg shadow-lg overflow-hidden transition-transform duration-200 hover:-translate-y-2">
+              <div className=" h-full md:h-[220px] flex items-center justify-center">
+                <img
+                  src={images.Vision}
+                  alt="Pandit performing puja"
+                  className="w-[90%] h-full object-contain"
+                />
+              </div>
+              <div className="flex flex-col justify-center p-6 pt-0 px-4 lg:px-6 lg:pt-6">
+                <h3 className="text-primary text-lg md:text-xl font-bold mb-2">
+                  Vision
+                </h3>
+                <p className="text-white font-medium">
+                  To become India’s most trusted platform for authentic Vedic rituals — preserving our cultural heritage while embracing digital ease.
+                </p>
               </div>
             </div>
           </div>
