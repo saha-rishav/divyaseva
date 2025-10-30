@@ -163,7 +163,7 @@ const Home = () => {
       </section>
 
       {/* Featured Pujas Section */}
-      <section className="bg-background gap-6 py-10">
+      <section className="bg-background py-10">
         <div className='w-[90%] max-w-7xl mx-auto pt-4 md:pt-[40px]'>
           <h2 className='text-secondary text-3xl md:text-5xl font-bold text-center mb-6 md:mb-9'>Popular Pujas</h2>
           <div className='grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-2'>
