@@ -52,6 +52,7 @@
 import React, { useEffect } from "react";
 import ServicePageCard from "../components/ServicePageCard";
 import { pujaServices } from "../assets/assets"; // <-- import your data
+import { FaSearch } from "react-icons/fa";
 
 const Services = () => {
   const gradients = [
@@ -76,24 +77,25 @@ const Services = () => {
       <div>
         <h2 className='text-3xl md:text-5xl font-script text-primary font-semibold capitalize mb-3 md:mb-6'>Our Puja Seva List</h2>
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-6 gap-4">
-          <div className='flex flex-row gap-2 overflow-x-auto pb-2'>
-            <button>All</button>
-            <button>Fortune</button>
-            <button>Strength</button>
-            <button>Festival</button>
+          <div className='flex flex-row gap-2 overflow-x-auto pb-2 md:pb-0'>
+            <button className="h-[45px] px-4 py-2 rounded-lg text-sm font-medium transition whitespace-nowrap cursor-pointer bg-card text-gray-700 hover:bg-gray-200">All</button>
+            <button className="h-[45px] px-4 py-2 rounded-lg text-sm font-medium transition whitespace-nowrap cursor-pointer bg-card text-gray-700 hover:bg-gray-200">Fortune</button>
+            <button className="h-[45px] px-4 py-2 rounded-lg text-sm font-medium transition whitespace-nowrap cursor-pointer bg-card text-gray-700 hover:bg-gray-200">Strength</button>
+            <button className="h-[45px] px-4 py-2 rounded-lg text-sm font-medium transition whitespace-nowrap cursor-pointer bg-card text-gray-700 hover:bg-gray-200">Festival</button>
           </div>
 
-          <div>
+          <div className="relative w-full h-[45px] md:max-w-sm">
             <input
               type="text"
               placeholder="e.g., Satyanarayan Katha"
-              className="border border-primary rounded-lg px-3 py-2 outline-none focus:ring-1 focus:[#e97855]"
+              className="w-full h-full bg-card rounded-lg ps-6 pe-12 py-2 outline-none  focus:bg-[#fff3ef]"
             />
+            <FaSearch className="absolute right-3 top-1/2 -translate-y-1/2 text-secondary" size={22}/>
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pt-10">
         {combinedData.map((card) => (
           <ServicePageCard
             key={card.id}
