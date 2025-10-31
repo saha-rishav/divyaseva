@@ -49,7 +49,7 @@
 //     //   </div>
 //     // </div>
 
-import React from "react";
+import React, { useEffect } from "react";
 import ServicePageCard from "../components/ServicePageCard";
 import { pujaServices } from "../assets/assets"; // <-- import your data
 
@@ -67,9 +67,33 @@ const Services = () => {
     ...gradients[index % gradients.length], // reuse gradients cyclically if more services
   }));
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, scroll: 'smooth' })
+  }, [])
+
   return (
-    <div className="w-[90%] max-w-6xl mx-auto pt-[40px]"> 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div className="w-[90%] max-w-7xl mx-auto pt-[15px] md:pt-[40px] pb-[60px]">
+      <div>
+        <h2 className='text-3xl md:text-5xl font-script text-primary font-semibold capitalize mb-3 md:mb-6'>Our Puja Seva List</h2>
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-6 gap-4">
+          <div className='flex flex-row gap-2 overflow-x-auto pb-2'>
+            <button>All</button>
+            <button>Fortune</button>
+            <button>Strength</button>
+            <button>Festival</button>
+          </div>
+
+          <div>
+            <input
+              type="text"
+              placeholder="e.g., Satyanarayan Katha"
+              className="border border-primary rounded-lg px-3 py-2 outline-none focus:ring-1 focus:[#e97855]"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-10">
         {combinedData.map((card) => (
           <ServicePageCard
             key={card.id}
