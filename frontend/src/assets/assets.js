@@ -29,7 +29,7 @@ export const images = {
 export const menuLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about-us' },
-    { name: 'Pujas', path: '/our-services' },
+    { name: 'Pujas', path: '/our-pujas' },
     { name: 'Pandits', path: '/our-pandits' },
 ]
 

@@ -8,4 +8,4 @@ const ServiceDetails = () => {
   )
 }
 
-export default ServiceDetails
+export default ServiceDetails;

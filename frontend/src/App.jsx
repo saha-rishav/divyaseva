@@ -7,7 +7,8 @@ import MainLayout from './layouts/MainLayout'
 import About from './pages/About'
 import Services from './pages/Services'
 import Pandits from './pages/Pandits'
-import ServiceDetails from './components/ServiceDetails'
+import ServiceDetails from './pages/ServiceDetails'
+import PanditDetails from './pages/PanditDetails'
 
 const App = () => {
   return (
@@ -17,9 +18,10 @@ const App = () => {
         <Route element={<MainLayout />}>
           <Route path='/' element={<Home />} />
           <Route path='/about-us' element={<About />} />
-          <Route path='/our-services' element={<Services />} />
+          <Route path='/our-pujas' element={<Services />} />
           <Route path='/our-pandits' element={<Pandits />} />
-          <Route path='/service-details' element={<ServiceDetails />} />
+          <Route path='/puja-details' element={<ServiceDetails />} />
+          <Route path='/pandit-details' element={<PanditDetails />} />
         </Route>
 
         {/* Auth Routes (no layout) */}

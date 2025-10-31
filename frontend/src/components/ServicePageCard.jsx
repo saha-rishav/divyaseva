@@ -158,8 +158,10 @@
 
 
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ServicePageCard = ({ gradientFrom, gradientTo, title, description, image }) => {
+    const navigate = useNavigate();
     return (
         <div className="relative bg-card rounded-2xl shadow-lg text-center overflow-hidden pb-5 group transition-transform duration-300 hover:-translate-y-1">
             {/* Top gradient background */}
@@ -199,7 +201,8 @@ const ServicePageCard = ({ gradientFrom, gradientTo, title, description, image }
                     <button className="w-[75%] flex items-center justify-center gap-2 text-white px-8 py-2 rounded-full font-medium cursor-pointer"
                         style={{
                             background: `linear-gradient(135deg, ${gradientFrom}, ${gradientTo})`,
-                        }}>
+                        }}
+                        onClick={()=> navigate('/puja-details')}>
                         Book Now
                     </button>
                 </div>

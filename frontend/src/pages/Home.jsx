@@ -20,7 +20,7 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section className='relative'>
-        <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] max-w-7xl mx-auto items-center gap-0 md:gap-6 pt-7 md:pt-2 pb-[70px] ">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] max-w-6xl mx-auto items-center gap-0  pt-7 md:pt-2 pb-[70px] ">
           <div className="w-[95%]">
             <h1 className="text-4xl md:text-7xl text-heading font-semibold capitalize mb-4 md:mb-6">
               Book Trusted Pandits for All Your Puja Needs
@@ -164,7 +164,7 @@ const Home = () => {
 
       {/* Featured Pujas Section */}
       <section className="bg-background py-10">
-        <div className='w-[90%] max-w-7xl mx-auto pt-4 md:pt-[40px]'>
+        <div className='w-[90%] max-w-6xl mx-auto pt-4 md:pt-[40px]'>
           <h2 className='text-secondary text-3xl md:text-5xl font-bold text-center mb-6 md:mb-9'>Popular Pujas</h2>
           <div className='grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-2'>
             {
@@ -180,7 +180,7 @@ const Home = () => {
           </div>
 
           <div className=' w-full flex justify-center items-center mt-6'>
-            <button className=" text-[#7b2c00] flex items-center font-semibold px-4.5 py-2.5 rounded-lg bg-button hover:bg-yellow-300 cursor-pointer" onClick={() => navigate('/our-services')}>
+            <button className=" text-[#7b2c00] flex items-center font-semibold px-4.5 py-2.5 rounded-lg bg-button hover:bg-yellow-300 cursor-pointer" onClick={() => navigate('/our-pujas')}>
               View All &nbsp;
               <FaLongArrowAltRight />
             </button>
@@ -190,7 +190,7 @@ const Home = () => {
 
       {/* Chat with Pandits */}
       <section className=' bg-background py-16'>
-        <div className=' w-[90%] max-w-7xl mx-auto'>
+        <div className=' w-[90%] max-w-6xl mx-auto'>
           <h2 className='text-3xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600 bg-clip-text text-transparent text-center mb-3'>Connect Instantly with Verified Pandits</h2>
           <p className=' text-center text-md lg:text-lg'>Ask your questions directly to our Pandit Ji — completely free.</p>
 
@@ -217,7 +217,7 @@ const Home = () => {
 
       {/* Why choose divyaSeva */}
       <section className=' py-16'>
-        <div className=' w-[90%] max-w-7xl mx-auto'>
+        <div className=' w-[90%] max-w-6xl mx-auto'>
           <h2 className=' text-3xl md:text-5xl text-center font-semibold text-heading'>Why DivyaSeva ?</h2>
           <div className=' max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 mt-9'>
             <div className='flex flex-shrink-0 lg:flex-row flex-col items-center md:h-[220px] gap-2 bg-counterCard rounded-lg shadow-lg p-2.5 transition-transform duration-200 hover:-translate-y-2'>
