@@ -20,12 +20,12 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section className='relative'>
-        <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] max-w-7xl mx-auto items-center gap-2 md:gap-6 pt-7 md:pt-2 pb-[70px] ">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] max-w-7xl mx-auto items-center gap-0 md:gap-6 pt-7 md:pt-2 pb-[70px] ">
           <div className="w-[95%]">
             <h1 className="text-4xl md:text-7xl text-heading font-semibold capitalize mb-4 md:mb-6">
               Book Trusted Pandits for All Your Puja Needs
             </h1>
-            <p className="text-md md:text-xl mb-4 md:mb-6 text-yellow-100 leading-relaxed">
+            <p className="text-md md:text-xl mb-0 md:mb-6 text-yellow-100 leading-relaxed">
               Hassle-free online booking for all pujas — Griha Pravesh, Satyanarayan Puja,
               Wedding rituals, and more. Get authentic Vedic Pandits at your doorstep.
             </p>
