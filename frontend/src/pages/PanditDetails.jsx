@@ -6,26 +6,26 @@ const PanditDetails = () => {
   // Example static data (replace with API data later)
   const pandit = {
     name: "Pandit Ramesh Sharma",
-    image: "https://via.placeholder.com/200x200",
+    image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
     location: "Varanasi, Uttar Pradesh",
     experience: "12 years",
     languages: ["Hindi", "Sanskrit", "English"],
     pujas: [
       {
         name: "Satyanarayan Katha",
-        image: "https://images.unsplash.com/photo-1601233749413-0b5c04b04e80?w=400",
+        image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
       },
       {
         name: "Griha Pravesh Puja",
-        image: "https://images.unsplash.com/photo-1588692236173-7e276f1b47e8?w=400",
+        image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
       },
       {
         name: "Wedding Puja",
-        image: "https://images.unsplash.com/photo-1606326608697-3f650b9c7c05?w=400",
+        image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
       },
       {
         name: "Navagraha Shanti",
-        image: "https://images.unsplash.com/photo-1602391830353-3c2d38b24144?w=400",
+        image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
       },
     ],
   };
