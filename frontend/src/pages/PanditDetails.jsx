@@ -1,8 +1,10 @@
 import React from "react";
 import { RiMapPin2Fill, RiSpeakFill } from "react-icons/ri";
 import { FaUserTie } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const PanditDetails = () => {
+  const navigate = useNavigate();
   // Example static data (replace with API data later)
   const pandit = {
     name: "Pandit Ramesh Sharma",
@@ -32,7 +34,7 @@ const PanditDetails = () => {
 
   return (
     <div className="w-[90%] max-w-7xl mx-auto pt-[30px] pb-16">
-      <h4 className="text-sm text-gray-500 mb-4 cursor-pointer hover:underline">
+      <h4 className="text-sm text-gray-500 mb-4 cursor-pointer hover:underline" onClick={()=> navigate('/our-pandits')}>
         ← Back to Pandits
       </h4>
 
@@ -76,7 +78,7 @@ const PanditDetails = () => {
         {/* RIGHT — Puja Cards (Wider Section) */}
         <div>
           <h2 className="text-2xl font-semibold text-heading mb-4">
-            Types of Puja
+            Types of Puja's Offered
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {pandit.pujas.map((puja, index) => (
