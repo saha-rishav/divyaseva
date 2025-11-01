@@ -34,12 +34,12 @@ const PanditDetails = () => {
 
   return (
     <div className="w-[90%] max-w-7xl mx-auto pt-[30px] pb-16">
-      <h4 className="text-sm text-gray-500 mb-4 cursor-pointer hover:underline" onClick={()=> navigate('/our-pandits')}>
+      <button className="text-sm md:text-lg text-primary mb-4 p-2 cursor-pointer hover:bg-card rounded-2xl hover:font-semibold hover:text-secondary" onClick={()=> navigate('/our-pandits')}>
         ← Back to Pandits
-      </h4>
+      </button>
 
       {/* Two-column layout with wider right side */}
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-12 items-start">
         {/* LEFT — Pandit Profile */}
         <div className="bg-card border rounded-2xl p-6 shadow-sm flex flex-col items-center text-center mt-[45px]">
           <img
@@ -95,7 +95,7 @@ const PanditDetails = () => {
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">
                     {puja.name}
                   </h3>
-                  <button className="bg-[#e97855] hover:bg-[#d8643e] text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors duration-200">
+                  <button className="bg-[#e97855] hover:bg-[#d8643e] cursor-pointer text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors duration-200" onClick={() => navigate('/puja-details')}>
                     Book Now
                   </button>
                 </div>

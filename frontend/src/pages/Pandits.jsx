@@ -11,8 +11,8 @@ const Pandits = () => {
     }, [])
 
     return (
-        <div className="w-[90%] max-w-6xl mx-auto pt-[15px] md:pt-[40px] pb-[60px]">
-            <div className='flex flex-col md:flex-row justify-between items-center'>
+        <div className="w-[90%] max-w-7xl mx-auto pt-[15px] md:pt-[40px] pb-[60px]">
+            <div className='flex flex-col md:flex-row justify-between items-start'>
                 <h2 className='text-3xl md:text-5xl font-script text-primary font-semibold capitalize mb-3 md:mb-6'>Verified Pandits</h2>
                 <div className="relative w-full h-[45px] md:max-w-sm">
                     <input

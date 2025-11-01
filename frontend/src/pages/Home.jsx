@@ -20,7 +20,7 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section className='relative'>
-        <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] max-w-6xl mx-auto items-center gap-0  pt-7 md:pt-2 pb-[70px] ">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] max-w-7xl mx-auto items-center gap-0  pt-7 md:pt-2 pb-[70px] ">
           <div className="w-[95%]">
             <h1 className="text-4xl md:text-7xl text-heading font-semibold capitalize mb-4 md:mb-6">
               Book Trusted Pandits for All Your Puja Needs

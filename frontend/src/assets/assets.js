@@ -64,9 +64,29 @@ export const panditProfiles = [
     {
         id: 1,
         name: "Pandit Ram Sharma",
-        experience: "10 yrs",
-        specialties: ["Griha Pravesh", "Satyanarayan Katha"],
         image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
+        experience: "10 yrs",
+        location: "Varanasi, Uttar Pradesh",
+        specialties: ["Griha Pravesh", "Satyanarayan Katha"],
+        languages: ["Hindi", "Sanskrit", "English"],
+        pujas: [
+            {
+                name: "Satyanarayan Katha",
+                image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
+            },
+            {
+                name: "Griha Pravesh Puja",
+                image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
+            },
+            {
+                name: "Wedding Puja",
+                image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
+            },
+            {
+                name: "Navagraha Shanti",
+                image: "https://img.freepik.com/free-vector/puja-illustration_1284-53279.jpg",
+            },
+        ],
     },
     {
         id: 2,

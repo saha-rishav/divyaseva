@@ -14,7 +14,7 @@ const About = () => {
     <>
       {/* About Us */}
       <section className='pt-2 md:pt-14 pb-10'>
-        <div className='w-[90%] max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-6 '>
+        <div className='w-[90%] max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-6 '>
           <div className="w-[100%] order-2 md:order-1">
             <h2 className="text-3xl md:text-5xl font-script text-primary font-semibold capitalize mb-3 md:mb-6">
               About Us
