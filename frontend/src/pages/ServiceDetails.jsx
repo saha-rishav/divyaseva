@@ -1,11 +1,81 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { images } from "../assets/assets";
 
 const ServiceDetails = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, scroll: 'smooth' })
+  }, [])
+
   return (
-    <div className="w-[90%] max-w-7xl mx-auto pt-[30px]">
-        <h4>Back to Pujas</h4>
-    </div>
-  )
-}
+    <>
+      <section>
+        <div className="w-[90%] max-w-7xl mx-auto pt-[40px] pb-[30px]">
+          {/* Back Button */}
+          <button onClick={() => navigate('/our-pujas')} className="text-primary font-medium hover:underline mb-6">
+            ← Back to Pujas
+          </button>
+
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-10 items-start pt-4">
+            <img
+              src={images.janmasthami}
+              alt="Puja"
+              className="w-full h-[300px] sm:h-[350px] md:h-[450px] object-contain"
+            />
+            <div className="w-full">
+              <div className="">
+                <h2 className="text-3xl md:text-5xl font-script text-primary font-semibold capitalize mb-3 md:mb-6">
+                  Ganesh Puja
+                </h2>
+                <p className="text-md md:text-lg mb-6 text-yellow-100 leading-relaxed">
+                  Ganesh Puja is performed to remove obstacles and bring good fortune. Lord Ganesha, known as the remover of obstacles, is worshipped before
+                  starting any new venture or important work. This puja brings peace, prosperity, and success.
+                </p>
+              </div>
+              <div className="mt-10">
+                <h3 className="text-3xl font-semibold text-primary mb-6 text-left">
+                  Steps to Perform
+                </h3>
+
+                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                  {["Prana Pratishtha", "Pavitrikaran", "Achman", "Deepak Pujan"].map(
+                    (step, i) => (
+                      <div
+                        key={i}
+                        className="relative bg-gradient-to-br from-orange-500 to-red-500 text-white rounded-2xl py-[15px] px-[10px] md:p-5 shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                      >
+                        {/* Step Number Badge */}
+                        <span className="absolute -top-3 left-4 bg-white text-orange-600 font-bold w-8 h-8 rounded-full flex items-center justify-center shadow-md">
+                          {i + 1}
+                        </span>
+
+                        {/* Decorative Circle */}
+                        <div className="absolute right-2 bottom-2 w-10 h-10 bg-white/20 rounded-full blur-sm"></div>
+
+                        <div className="flex flex-col items-center justify-center h-full">
+                          <p className="text-lg font-semibold text-white mb-2">{step}</p>
+                          <span className="text-sm opacity-80 italic">Ritual {i + 1}</span>
+                        </div>
+                      </div>
+                    )
+                  )}
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-background">
+        <div className="w-[90%] max-w-7xl mx-auto pt-[40px] pb-[60px]">
+          package
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default ServiceDetails;
