@@ -22,7 +22,7 @@ const ServiceDetails = () => {
             <img
               src={images.janmasthami}
               alt="Puja"
-              className="w-full h-[300px] sm:h-[350px] md:h-[450px] object-contain"
+              className="w-full lg:w-[500px] h-[300px] sm:h-[350px] md:h-[450px] object-contain"
             />
             <div className="w-full">
               <div className="">
@@ -62,6 +62,7 @@ const ServiceDetails = () => {
                     )
                   )}
                 </div>
+                <button>See All</button>
               </div>
 
             </div>
@@ -71,7 +72,27 @@ const ServiceDetails = () => {
 
       <section className="bg-background">
         <div className="w-[90%] max-w-7xl mx-auto pt-[40px] pb-[60px]">
-          package
+          <h3 className="font-semibold text-3xl text-secondary">Available Packages</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3">
+            
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+          <div>
+            <h3 className="text-2xl font-semibold mb-2">Shubharambh Package</h3>
+            <p className="text-gray-600 mb-3">Includes 1 Pandit + 45 Samagri</p>
+            <ul className="text-sm text-gray-500 list-disc pl-5">
+              <li>Duration: 2 Hours</li>
+              <li>Tradition: North Indian</li>
+              <li>Location: Bengaluru</li>
+            </ul>
+          </div>
+          <div className="text-right mt-4 md:mt-0">
+            <p className="text-3xl font-bold text-primary mb-2">₹5002</p>
+            <button className="bg-primary text-white px-6 py-2 rounded-xl font-semibold hover:bg-orange-700 transition">
+              Book Now
+            </button>
+          </div>
+        </div>
+          </div>
         </div>
       </section>
     </>
