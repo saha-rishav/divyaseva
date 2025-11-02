@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { RiMapPin2Fill, RiSpeakFill } from "react-icons/ri";
 import { FaUserTie } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -32,9 +32,13 @@ const PanditDetails = () => {
     ],
   };
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, scroll: 'smooth' });
+  }, [])
+
   return (
     <div className="w-[90%] max-w-7xl mx-auto pt-[30px] pb-16">
-      <button className="text-sm md:text-lg text-primary mb-4 p-2 cursor-pointer hover:bg-card rounded-2xl hover:font-semibold hover:text-secondary" onClick={()=> navigate('/our-pandits')}>
+      <button className="text-sm md:text-lg text-primary mb-4 p-2 cursor-pointer hover:bg-card rounded-2xl hover:font-semibold hover:text-secondary" onClick={() => navigate('/our-pandits')}>
         ← Back to Pandits
       </button>
 

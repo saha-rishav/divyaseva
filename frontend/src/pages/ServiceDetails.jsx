@@ -14,7 +14,7 @@ const ServiceDetails = () => {
       <section>
         <div className="w-[90%] max-w-7xl mx-auto pt-[40px] pb-[30px]">
           {/* Back Button */}
-          <button onClick={() => navigate('/our-pujas')} className="text-primary font-medium hover:underline mb-6">
+          <button onClick={() => navigate('/our-pujas')} className="text-sm md:text-lg text-primary mb-4 p-2 cursor-pointer hover:bg-card rounded-2xl hover:font-semibold hover:text-secondary">
             ← Back to Pujas
           </button>
 
